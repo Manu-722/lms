@@ -40,6 +40,8 @@ urlpatterns = [
     path('grades/', include('grades.urls')),
     path('api/', include('api.urls')),
     path('', include(('users.urls', 'users'), namespace='users')),
+    path('', include('lms_core.urls')),
+
 
 ]
 if settings.DEBUG:
